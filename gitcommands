@@ -8,3 +8,24 @@ git add newfile    #add the newfile to the repo
 git config --global user.email "you@example.com"   #log into github
 git config --global user.name "Your Name"
 git commit -m "added newfile"                      # commit change 
+
+git branch my1stbranch   #create a branch
+git branch               #check out the branches
+git checkout my1stbranch  
+git checkout -b my2ndbranch #another way to create a branch
+
+echo "Here is some text in my new file" >> newfile  #make changes in file
+cat newfile                #verify if text has been added
+git status                 #check file status
+git add *                  #get file ready to commit
+git commit -m "add readme.md and modified newfile"         #commit changes
+git log                     #see history of recent commits
+
+git revert HEAD --no--edit             #use the shortcut HEAD to rollback the last commit
+
+#press Q to exit git log 
+
+git checkout master                #merge my1stbranch to master
+git merge my1stbranch
+
+git branch -d my1stbranch           #delete my1stbranch
