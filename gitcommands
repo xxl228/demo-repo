@@ -1,0 +1,10 @@
+#in Jupyter Notebook, create a New Terminal
+mkdir myrepo
+cd myrepo
+git init           #initialize a .git folder containing all the git files
+ls -la .git        #show a list of files in the .git folder
+touch newfile      #create a new file
+git add newfile    #add the newfile to the repo
+git config --global user.email "you@example.com"   #log into github
+git config --global user.name "Your Name"
+git commit -m "added newfile"                      # commit change 
